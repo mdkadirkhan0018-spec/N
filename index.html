@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>রমজান ক্যালেন্ডার ২০২৬ - মধ্য‌ নাশুল্যা মসজিদ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&family=Roboto:wght@900&display=swap');
+
+        /* A4 প্রিন্ট সাইজ স্কেলিং */
+        @page { size: 210mm 297mm; margin: 0; }
+        
+        body { 
+            font-family: 'Hind Siliguri', sans-serif; 
+            margin: 0; padding: 0; background: #fff; 
+            display: flex; justify-content: center; align-items: center;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .a4-wrapper {
+            width: 210mm; height: 297mm; padding: 6mm; 
+            box-sizing: border-box; display: flex; flex-direction: column;
+        }
+
+        .main-border {
+            width: 100%; height: 100%; border: 6px double #002366; 
+            padding: 1.5mm; box-sizing: border-box; display: flex; flex-direction: column;
+        }
+
+        .inner-frame {
+            border: 2px solid #b8860b; padding: 4px; box-sizing: border-box;
+            height: 100%; display: flex; flex-direction: column; justify-content: space-between;
+        }
+
+        .header { text-align: center; border-bottom: 2px solid #b8860b; padding-bottom: 4px; position: relative; }
+        h1 { margin: 0; font-size: 22px; color: #002366; font-weight: 900; }
+        .sub-text { font-size: 11px; color: #b8860b; font-weight: bold; margin: 2px 0; }
+        
+        .qr-placeholder { position: absolute; right: 5px; top: 0; width: 50px; height: 50px; border: 1px solid #002366; }
+
+        .phase-title {
+            background: #002366; color: #ffd700; text-align: center;
+            font-size: 11px; font-weight: 900; padding: 3px; margin: 3px 0;
+            border: 1px solid #000; line-height: 1.2;
+        }
+
+        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        th, td { border: 1px solid #000; padding: 2.5px 0; text-align: center; font-size: 13.5px; font-weight: 900; }
+        th { background-color: #f2f2f2 !important; color: #002366; font-size: 11px; }
+
+        .eng-num { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 14px; }
+        .friday { background-color: #fff9c4 !important; }
+
+        .dua-section { display: flex; gap: 6px; margin-top: 3px; }
+        .dua-box { flex: 1; border: 1.2px solid #002366; padding: 5px; font-size: 11.5px; font-weight: 900; background: #f9f9f9 !important; line-height: 1.3; }
+
+        .footer { text-align: center; border-top: 2px solid #b8860b; padding-top: 4px; margin-top: 2px; font-weight: 900; font-size: 11.5px; color: #002366; }
+    </style>
+</head>
+<body>
+
+<div class="a4-wrapper">
+    <div class="main-border">
+        <div class="inner-frame">
+            <div class="header">
+                <h1>মধ্য‌ নাশুল্যা পুকুরপাড় জামে মসজিদ</h1>
+                <div class="sub-text">৭ নং ওয়ার্ড, ১২ নং স্বদেশী ইউনিয়ন পরিষদ, হালুয়াঘাট, ময়মনসিংহ</div>
+                <div style="font-size: 15px; font-weight: 900; color: #002366;">রমজান সময়সূচী ও আমল - ২০২৬</div>
+                <div class="qr-placeholder" id="qrcode"></div>
+            </div>
+
+            <div class="phase-title">রহমতের ১০ দিন: "হে আমাদের পালনকর্তা! আমাদের ওপর রহমত নাজিল করুন।"</div>
+            <table>
+                <thead>
+                    <tr><th style="width:10%">রমজান</th><th style="width:18%">তারিখ</th><th style="width:18%">বার</th><th style="width:18%">সেহরি শেষ</th><th style="width:18%">ফজর আজান</th><th style="width:18%">ইফতার</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="eng-num">01</td><td class="eng-num">19 Feb</td><td>বৃহস্পতি</td><td class="eng-num">05:11</td><td class="eng-num">05:17</td><td class="eng-num">05:57</td></tr>
+                    <tr class="friday"><td class="eng-num">02</td><td class="eng-num">20 Feb</td><td>শুক্রবার</td><td class="eng-num">05:10</td><td class="eng-num">05:16</td><td class="eng-num">05:57</td></tr>
+                    <tr><td class="eng-num">03</td><td class="eng-num">21 Feb</td><td>শনিবার</td><td class="eng-num">05:10</td><td class="eng-num">05:16</td><td class="eng-num">05:58</td></tr>
+                    <tr><td class="eng-num">04</td><td class="eng-num">22 Feb</td><td>রবিবার</td><td class="eng-num">05:09</td><td class="eng-num">05:15</td><td class="eng-num">05:58</td></tr>
+                    <tr><td class="eng-num">05</td><td class="eng-num">23 Feb</td><td>সোমবার</td><td class="eng-num">05:08</td><td class="eng-num">05:14</td><td class="eng-num">05:59</td></tr>
+                    <tr><td class="eng-num">06</td><td class="eng-num">24 Feb</td><td>মঙ্গলবার</td><td class="eng-num">05:07</td><td class="eng-num">05:13</td><td class="eng-num">05:59</td></tr>
+                    <tr><td class="eng-num">07</td><td class="eng-num">25 Feb</td><td>বুধবার</td><td class="eng-num">05:07</td><td class="eng-num">05:13</td><td class="eng-num">06:00</td></tr>
+                    <tr><td class="eng-num">08</td><td class="eng-num">26 Feb</td><td>বৃহস্পতি</td><td class="eng-num">05:06</td><td class="eng-num">05:12</td><td class="eng-num">06:01</td></tr>
+                    <tr class="friday"><td class="eng-num">09</td><td class="eng-num">27 Feb</td><td>শুক্রবার</td><td class="eng-num">05:05</td><td class="eng-num">05:11</td><td class="eng-num">06:01</td></tr>
+                    <tr><td class="eng-num">10</td><td class="eng-num">28 Feb</td><td>শনিবার</td><td class="eng-num">05:04</td><td class="eng-num">05:10</td><td class="eng-num">06:02</td></tr>
+                </tbody>
+            </table>
+
+            <div class="phase-title">মাগফিরাতের ১০ দিন: "নিশ্চয়ই আল্লাহ সব গুনাহ ক্ষমা করে দেন।"</div>
+            <table>
+                <tbody>
+                    <tr><td class="eng-num" style="width:10%">11</td><td class="eng-num" style="width:18%">01 Mar</td><td>রবিবার</td><td class="eng-num" style="width:18%">05:03</td><td class="eng-num" style="width:18%">05:09</td><td class="eng-num" style="width:18%">06:02</td></tr>
+                    <tr><td class="eng-num">12</td><td class="eng-num">02 Mar</td><td>সোমবার</td><td class="eng-num">05:02</td><td class="eng-num">05:08</td><td class="eng-num">06:03</td></tr>
+                    <tr><td class="eng-num">13</td><td class="eng-num">03 Mar</td><td>মঙ্গলবার</td><td class="eng-num">05:02</td><td class="eng-num">05:08</td><td class="eng-num">06:03</td></tr>
+                    <tr><td class="eng-num">14</td><td class="eng-num">04 Mar</td><td>বুধবার</td><td class="eng-num">05:01</td><td class="eng-num">05:07</td><td class="eng-num">06:04</td></tr>
+                    <tr><td class="eng-num">15</td><td class="eng-num">05 Mar</td><td>বৃহস্পতি</td><td class="eng-num">05:00</td><td class="eng-num">05:06</td><td class="eng-num">06:04</td></tr>
+                    <tr class="friday"><td class="eng-num">16</td><td class="eng-num">06 Mar</td><td>শুক্রবার</td><td class="eng-num">04:59</td><td class="eng-num">05:05</td><td class="eng-num">06:05</td></tr>
+                    <tr><td class="eng-num">17</td><td class="eng-num">07 Mar</td><td>শনিবার</td><td class="eng-num">04:58</td><td class="eng-num">05:04</td><td class="eng-num">06:05</td></tr>
+                    <tr><td class="eng-num">18</td><td class="eng-num">08 Mar</td><td>রবিবার</td><td class="eng-num">04:57</td><td class="eng-num">05:03</td><td class="eng-num">06:06</td></tr>
+                    <tr><td class="eng-num">19</td><td class="eng-num">09 Mar</td><td>সোমবার</td><td class="eng-num">04:56</td><td class="eng-num">05:02</td><td class="eng-num">06:06</td></tr>
+                    <tr><td class="eng-num">20</td><td class="eng-num">10 Mar</td><td>মঙ্গলবার</td><td class="eng-num">04:55</td><td class="eng-num">05:01</td><td class="eng-num">06:07</td></tr>
+                </tbody>
+            </table>
+
+            <div class="phase-title">নাজাতের ১০ দিন: "লাইলাতুল কদর হাজার মাসের চেয়েও শ্রেষ্ঠ।"</div>
+            <table>
+                <tbody>
+                    <tr><td class="eng-num" style="width:10%">21</td><td class="eng-num" style="width:18%">11 Mar</td><td>বুধবার</td><td class="eng-num" style="width:18%">04:54</td><td class="eng-num" style="width:18%">05:00</td><td class="eng-num" style="width:18%">06:07</td></tr>
+                    <tr><td class="eng-num">22</td><td class="eng-num">12 Mar</td><td>বৃহস্পতি</td><td class="eng-num">04:53</td><td class="eng-num">04:59</td><td class="eng-num">06:07</td></tr>
+                    <tr class="friday"><td class="eng-num">23</td><td class="eng-num">13 Mar</td><td>শুক্রবার</td><td class="eng-num">04:52</td><td class="eng-num">04:58</td><td class="eng-num">06:08</td></tr>
+                    <tr><td class="eng-num">24</td><td class="eng-num">14 Mar</td><td>শনিবার</td><td class="eng-num">04:51</td><td class="eng-num">04:57</td><td class="eng-num">06:08</td></tr>
+                    <tr><td class="eng-num">25</td><td class="eng-num">15 Mar</td><td>রবিবার</td><td class="eng-num">04:50</td><td class="eng-num">04:56</td><td class="eng-num">06:09</td></tr>
+                    <tr><td class="eng-num">26</td><td class="eng-num">16 Mar</td><td>সোমবার</td><td class="eng-num">04:49</td><td class="eng-num">04:55</td><td class="eng-num">06:09</td></tr>
+                    <tr><td class="eng-num">27</td><td class="eng-num">17 Mar</td><td>মঙ্গলবার</td><td class="eng-num">04:48</td><td class="eng-num">04:54</td><td class="eng-num">06:10</td></tr>
+                    <tr><td class="eng-num">28</td><td class="eng-num">18 Mar</td><td>বুধবার</td><td class="eng-num">04:47</td><td class="eng-num">04:53</td><td class="eng-num">06:10</td></tr>
+                    <tr><td class="eng-num">29</td><td class="eng-num">19 Mar</td><td>বৃহস্পতি</td><td class="eng-num">04:46</td><td class="eng-num">04:52</td><td class="eng-num">06:11</td></tr>
+                    <tr class="friday"><td class="eng-num">30</td><td class="eng-num">20 Mar</td><td>শুক্রবার</td><td class="eng-num">04:45</td><td class="eng-num">04:51</td><td class="eng-num">06:11</td></tr>
+                </tbody>
+            </table>
+
+            <div class="dua-section">
+                <div class="dua-box"><b>রোজার নিয়ত:</b> নাওয়াইতু আন আসুমা গাদাম মিন শাহরি রামাদ্বানাল মুবারাকি ফারদ্বাল্লাকা ইয়া আল্লাহু ফাতাক্বাব্বাল মিন্নি।</div>
+                <div class="dua-box"><b>ইফতারের দোয়া:</b> আল্লাহুম্মা লাকা সুমতু ওয়া আলা রিযক্বিকা আফতারতু ফাতাক্বাব্বাল মিন্নি।</div>
+            </div>
+
+            <div class="footer">"যে ব্যক্তি ঈমানের সাথে ও সওয়াবের আশায় রমজানের রোজা রাখবে, তার পূর্ববর্তী সকল গুনাহ ক্ষমা করা হবে।" (সহীহ বুখারী)</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "https://yourmosquelink.com",
+        width: 50, height: 50
+    });
+</script>
+</body>
+  </html>
+  
